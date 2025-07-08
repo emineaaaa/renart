@@ -6,6 +6,7 @@ const GOLD_API_CURRENCIES = process.env.GOLD_API_CURRENCIES || 'XAU';
 
 const GOLD_API_URL = `${GOLD_API_BASE_URL}?api_key=${GOLD_API_KEY}&base=USD&currencies=${GOLD_API_CURRENCIES}`;//dinamik api oluşturdum
 
+
 export async function getGoldPricePerGram() {
   if (!GOLD_API_KEY || !GOLD_API_BASE_URL) {
     console.error("Hata: GOLD_API_KEY veya GOLD_API_BASE_URL .env dosyasında ayarlanmamış.");
