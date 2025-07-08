@@ -18,7 +18,7 @@ function ProductList() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/products');
+        const response = await fetch('/api/products');
         if (!response.ok) {
           throw new Error(`HTTP hatası! Durum kodu: ${response.status}`);
         }
