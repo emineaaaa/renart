@@ -18,7 +18,7 @@ function ProductList() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('/api/products');
+        const response = await fetch('https://renart-zxl1-nko0zuzi1-emines-projects-6c93615c.vercel.app/api/products');
         if (!response.ok) {
           throw new Error(`HTTP hatası! Durum kodu: ${response.status}`);
         }
